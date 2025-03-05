@@ -1,0 +1,3 @@
+downtime.is {
+    reverse_proxy server:8080
+}

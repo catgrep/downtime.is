@@ -1,0 +1,7 @@
+*.md
+*.yaml
+.git
+.env
+.gitignore
+Makefile
+*_test.go

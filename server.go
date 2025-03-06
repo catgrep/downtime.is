@@ -10,7 +10,7 @@ import (
 
 var (
 	version   = "dev"
-	githubUrl = "github.com/bosdhill/downtime.is"
+	githubUrl = "github.com/catgrep/downtime.is"
 )
 
 func main() {

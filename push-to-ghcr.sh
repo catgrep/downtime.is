@@ -14,7 +14,7 @@ docker buildx build \
     --progress plain \
     --platform linux/amd64,linux/arm64 \
     --build-arg VERSION="$TAG" \
-    -t ghcr.io/bosdhill/downtime.is:"$TAG" \
-    -t ghcr.io/bosdhill/downtime.is:latest \
+    -t ghcr.io/catgrep/downtime.is:"$TAG" \
+    -t ghcr.io/catgrep/downtime.is:latest \
     --push .
-infomsg "Published: ghcr.io/bosdhill/downtime.is:$TAG"
+infomsg "Published: ghcr.io/catgrep/downtime.is:$TAG"

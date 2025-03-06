@@ -1,8 +1,6 @@
 # downtime.is
 
-[![Go Coverage](https://codecov.io/gh/bosdhill/downtime.is/branch/main/graph/badge.svg)](https://codecov.io/gh/bosdhill/downtime.is)
-
-[![Go Report Card](https://goreportcard.com/badge/github.com/bosdhill/downtime.is)](https://goreportcard.com/report/github.com/bosdhill/downtime.is)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bosdhill/downtime.is)](https://goreportcard.com/report/github.com/bosdhill/downtime.is) [![Go Coverage](https://codecov.io/gh/bosdhill/downtime.is/branch/main/graph/badge.svg)](https://codecov.io/gh/bosdhill/downtime.is)
 
 A simple SLA calculator inspired by [uptime.is](https://uptime.is). Calculate SLA percentages for various reporting periods based on downtime duration.
 

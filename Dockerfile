@@ -1,4 +1,4 @@
-FROM golang:1.24.0-alpine AS build
+FROM golang:1.24.2-alpine AS build
 
 ARG VERSION=dev
 ENV CGO_ENABLED=0
@@ -9,7 +9,7 @@ go build -ldflags="-X main.version=${VERSION}" -o /usr/bin/server .
 server -version
 EOF
 
-FROM alpine:3.21.2
+FROM alpine:3.21.3
 
 COPY --from=build /usr/bin/server /usr/bin/server
 EXPOSE 8080

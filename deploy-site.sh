@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# Deploy configuration
-DEPLOY_HOST=$(grep DEPLOY_HOST .env | cut -d '=' -f2)
-DEPLOY_DIR=$(grep DEPLOY_DIR .env | cut -d '=' -f2)
-GITHUB_USER=$(grep GITHUB_USER .env | cut -d '=' -f2)
-CR_PAT=$(grep CR_PAT .env | cut -d '=' -f2)
 TAG=$(git rev-parse --short HEAD)
 DEPLOY_CMD="TAG=$TAG docker-compose pull && TAG=$TAG docker-compose up -d"
 
@@ -51,6 +46,7 @@ main() {
         warnmsg "Local .env file not found!"
         exit 1
     fi
+    source .env
 
     # Login to GitHub Container Registry on remote server
     infomsg "Logging into GitHub Container Registry on '$DEPLOY_HOST'."
